@@ -1,0 +1,48 @@
+{
+  "name": "testflow",
+  "version": "0.0.1",
+  "repository": "git@github.com:dummyedu/testflow.git",
+  "author": "ningl <ningl@curacloudcorp.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "@webpack-cli/serve": "^0.1.8",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-import": "^1.12.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-typescript": "^6.3.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "jest": "^24.8.0",
+    "jest-environment-jsdom-fourteen": "^0.1.0",
+    "jest-watch-typeahead": "^0.3.1",
+    "prettier": "^1.18.2",
+    "react-app-polyfill": "^1.0.1",
+    "typescript": "^3.5.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "build": "tsc && babel -x .ts src --out-dir lib",
+    "test": "jest",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
