@@ -39,7 +39,7 @@
   },
   "scripts": {
     "build": "tsc && babel -x .ts src --out-dir lib",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src"
   },
   "dependencies": {
