@@ -20,4 +20,12 @@ jobs:
       - uses: meeDamian/github-release@1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          tag: v1.1.2
+          name: My Creative Name
+          body: >
+            This release actually changes the fabric of the reality, so be careful 
+            while applying, as error in database migration, can irrecoverably wipe 
+            some laws of physics.
+          files: >
+            lib/
 
