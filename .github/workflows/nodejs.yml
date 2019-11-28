@@ -17,6 +17,10 @@ jobs:
         with:
           cmd: test # will run `yarn test` command
 
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} #required
+
       - uses: meeDamian/github-release@1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -24,8 +28,3 @@ jobs:
           name: My Creative Name
           files: >
             lib/
-
-      - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }} #required
-
