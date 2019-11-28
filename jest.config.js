@@ -2,6 +2,7 @@
 module.exports = {
   verbose: true,
   collectCoverage: true,
+  coverageDirectory: './coverage/',
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
     '!src/testutils/**/*',
